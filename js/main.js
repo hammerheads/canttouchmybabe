@@ -10,12 +10,11 @@ function startPage(customer) {
 
 $( document ).ready(function () {
     $("#wrapper").toggleClass("toggled");
-   /* $.ajax({
+   $.ajax({
         url: 'http://192.168.248.16:3000/customer/1',
         type: 'GET',
         success: function (res) {
             startPage(res);
         }
-    })*/
-    startPage(JSON.parse('{"id":1,"firstName":"Robin","lastName":"Le Lapin","email":"chonco@slavs.com","phone":"967263998","babes":[{"firstName":"Pipa","lastName":"Pitucha","email":"test@test.com","id":1,"tracking":false},{"firstName":"Cat","lastName":"Pitucha","email":"test@test.com","id":2,"tracking":false}],"pic":"https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg"}'))
+    })
 })
