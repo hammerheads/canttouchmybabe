@@ -320,18 +320,35 @@ textarea {
   position: absolute;
   top: 0;
   width: 250px;
-  margin: 0;
+  margin: 50px 0 0 0;
   padding: 25px;
   list-style: none;
 }
 
-.sidebar-nav #user-name {
+.profile-thumb {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.sidebar-nav li {
+.profile-thumb img {
+  /* border-radius: 80%; */
+  width: 6rem; 
+  border-radius: 50%;
+}
+
+.profile-thumb h3 {
+  padding-left: 20px;
+}
+
+/* .sidebar-nav li {
   text-indent: 20px;
-  line-height: 40px;
+  line-height: 30px; 
+} */
+
+.sidebar-links {
+  margin-left: 146px;
+  margin-bottom: 5px;
 }
 
 .sidebar-nav li a {
