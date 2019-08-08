@@ -7,19 +7,20 @@ $("#menu-toggle").click(function (e) {
 
 
 function startPage(customer) {
-    $('#username').html(customer.firstName);
     $('#Profile-Avatar').attr({ src: customer.pic });
+    $('#username').html(customer.firstName);
 }
 
-$(document).ready(function () {
-    $.ajax({
+
+
+$( document ).ready(function () {
+   $.ajax({
         url: 'http://192.168.248.16:3000/customer/1',
         type: 'GET',
         success: function (res) {
             startPage(res);
         }
     })
-<<<<<<< HEAD
 })
 
 
@@ -52,15 +53,4 @@ function submitBabe() {
     })
 
 }
-=======
-    
-})
 
-
-$(window).resize(function () {
-    /*
-    if ($(document).width() < 992) {
-        $("#wrapper").toggleClass("toggled");
-    }*/
-});
->>>>>>> 7e8fffe0b17e568be77bc99293367c4bd0c7749e
