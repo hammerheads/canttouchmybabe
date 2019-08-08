@@ -410,3 +410,30 @@ textarea {
       margin-right: 0;
   }
 }
+.detetive-chat-container{
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.detetive-chat-container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.detetive-chat-container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+
+.detetive-chat-time{
+  float: right;
+  color: #aaa;
+}
