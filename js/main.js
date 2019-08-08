@@ -19,40 +19,6 @@ $(document).ready(function () {
             startPage(res);
         }
     })
-<<<<<<< HEAD
-})
-
-
-function submitBabe() {
-
-    $("#cid").val("1");
-
-    console.log($("#cid"));
-    
-
-    $.ajax({
-        url: API + '/customer/' + $("#cid").val() + "/babe/",
-        type: 'POST',
-        data: JSON.stringify({
-            firstName: $("#firstName").val(),
-            lastName: $("#lastName").val(),
-            email: $("#email").val(),
-            phone: $("#phone").val(),
-            address: $("#address").val(),
-            locations: [$("#locations1").val(), $("#locations2").val(), $("#locations3").val()]
-        }),
-        async: true,
-        contentType: "application/json",
-        success: function() {
-            console.log("success");
-        },
-        error: function(status, error) {
-            console.log('Something went wrong: ', status, error);
-        }
-    })
-
-}
-=======
     
 })
 
@@ -63,4 +29,3 @@ $(window).resize(function () {
         $("#wrapper").toggleClass("toggled");
     }*/
 });
->>>>>>> 7e8fffe0b17e568be77bc99293367c4bd0c7749e
