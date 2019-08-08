@@ -5,16 +5,25 @@ $("#menu-toggle").click(function (e) {
 
 
 function startPage(customer) {
-    $('#Profile-Avatar').attr({ src: customer.pic })
+    $('#username').html(customer.firstName);
+    $('#Profile-Avatar').attr({ src: customer.pic });
 }
 
-$( document ).ready(function () {
-    $("#wrapper").toggleClass("toggled");
-   $.ajax({
+$(document).ready(function () {
+    $.ajax({
         url: 'http://192.168.248.16:3000/customer/1',
         type: 'GET',
         success: function (res) {
             startPage(res);
         }
     })
+    
 })
+
+
+$(window).resize(function () {
+    /*
+    if ($(document).width() < 992) {
+        $("#wrapper").toggleClass("toggled");
+    }*/
+});
