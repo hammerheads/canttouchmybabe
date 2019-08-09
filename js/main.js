@@ -26,10 +26,7 @@ $( document ).ready(function () {
 
 function submitBabe() {
 
-    $("#cid").val("1");
-
-    console.log($("#cid"));
-    
+    $("#cid").val("1");    
 
     $.ajax({
         url: API + '/customer/' + $("#cid").val() + "/babe/",
