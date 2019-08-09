@@ -17,6 +17,13 @@ html {
   line-height: 1.4;
 }
 
+body {
+  background: rgb(49, 48, 48);
+  color: white;
+  font-family: 'Montserrat';
+  line-height: 1.7;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -347,20 +354,22 @@ textarea {
 } */
 
 .sidebar-links {
-  margin-left: 146px;
-  margin-bottom: 5px;
+  margin-left: 102px;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
 }
 
 .sidebar-nav li a {
   display: block;
   text-decoration: none;
-  color: #0f0f0f;
+  color: whitesmoke;
+  transition: font-size 0.3s;
 }
 
 .sidebar-nav li a:hover {
   text-decoration: none;
   color: #fff;
-  background: rgba(255,255,255,0.2);
+  font-size: 23px;
 }
 
 .sidebar-nav li a:active,
@@ -410,3 +419,34 @@ textarea {
       margin-right: 0;
   }
 }
+
+/* cards */
+.card-deck .card {
+  min-width: 270px !important;
+}
+
+.card {
+  background-color: #212121;
+  color: whitesmoke;
+  /* border-color: #999 */
+}
+
+.btn {
+  background: #6a1cfb;
+  color: whitesmoke;
+  border: #19073a;
+}
+
+.display-4 {
+  /* font-family: 'Nanum Myeongjo'; */
+  font-family: 'Libre Caslon Text';
+}
+
+/* Landing Page */
+
+/* .landing-page img {
+  width: auto;
+  height: 100vh;
+} */
+
+
