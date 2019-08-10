@@ -4,6 +4,4 @@
  
 This project is a fictional web app which corresponds to theme selected at academia de codigo. 
 
-Enjoy! 
-Love,
-Leandro, Matheus, Luis and João.
+Enjoy!  Love,  Leandro, Matheus, Luis and João.
